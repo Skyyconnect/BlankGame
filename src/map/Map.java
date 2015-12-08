@@ -43,13 +43,11 @@ public class Map extends JPanel {
 
     public static final int PREFERRED_GRID_SIZE_PIXELS = 2;
 
-    // In reality you will probably want a class here to represent a map tile,
-    // which will include things like dimensions, color, properties in the
-    // game world.  Keeping simple just to illustrate.
+   
     public Color[][] terrainGrid;
 
     public static void main(String[] args) {
-        // http://docs.oracle.com/javase/tutorial/uiswing/concurrency/initial.html
+       
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 JFrame frame = new JFrame("Wizard Kingdom");
